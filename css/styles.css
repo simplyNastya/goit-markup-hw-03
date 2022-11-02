@@ -60,11 +60,11 @@ nav {
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
     line-height: 1.19;
+    margin-right: 93px;
 }
 
 .logo-top {
     color: var(--black-color);
-    margin-right: 93px;
 }
 
 .list {
@@ -94,6 +94,8 @@ nav {
     background-color: var(--hero-background);
     color: var(--white-color);
     text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .hero-title {
@@ -102,8 +104,11 @@ nav {
     line-height: 1.36;
     text-transform: uppercase;
     letter-spacing: 0.06em;
+    max-width: 696px;
     margin-top: 0;
+    margin-right: auto;
     margin-bottom: 30px;
+    margin-left: auto;
 }
 
 .main-button {
@@ -118,6 +123,11 @@ nav {
     padding: 10px 32px;
     border-radius: 4px;
     border: 0;
+}
+
+.benefits {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .feature-title {
@@ -141,46 +151,62 @@ nav {
 }
 
 .features {
-    padding: 94px 15px;
+    width: 270px;
+}
+
+.works {
+    padding-bottom: 94px;
 }
 
 .title {
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
-    margin: 0;
-    padding-bottom: 50px;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.works-list {
+    display: flex;
+    justify-content: space-between;
 }
 
 .team {
     background-color: var(--third-section-and-portfoliobtn-background);
-}
-
-.team > .title {
     padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .team-list {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 94px;
+}
+
+.team-item {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .team-title {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 
 .team-text {
     color: var(--additional-font-color);
     font-size: 16px;
     line-height: 1.18;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 footer {
     background-color: var(--footer-background);
-    padding: 60px 15px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 footer .logo {
     display: block;
@@ -220,6 +246,11 @@ footer .logo {
     margin-bottom: 0;
 }
 
+.second-page {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .secondary-button {
     background-color: var(--third-section-and-portfoliobtn-background);
     font-family: 'Roboto', sans-serif;
@@ -239,6 +270,16 @@ footer .logo {
     color: var(--white-color);
 }
 
+.filtr-list {
+    margin-bottom: 94px;
+    display: flex;
+    justify-content: center;
+}
+
+.filtr-list>li {
+    padding-right: 8px;
+}
+
 .filtr-list:first-child {
     padding: 6px 25px;
 }
@@ -247,8 +288,8 @@ footer .logo {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    margin: 0;
-    padding: 10px 24px;
+    margin-top: 0;
+    margin-bottom: 4px;
 }
 
 .example-text {
@@ -256,7 +297,40 @@ footer .logo {
     font-size: 16px;
     line-height: 1.87;
     margin: 0;
-    padding: 10px 24px;
+}
+
+
+.examples-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.example {
+    width: calc((100% - 60px) / 3);
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.example:nth-child(3n) {
+    margin-right: 0;
+}
+
+.example:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+}
+
+.example-item {
+    padding-top: 20px;
+    padding-right: 24px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    border-right: 1px solid var(--portfolio-border-list);
+    border-bottom: 1px solid var(--portfolio-border-list);
+    border-left: 1px solid var(--portfolio-border-list);
+}
+
+img {
+    display: block;
 }
 
 .container {
@@ -265,42 +339,4 @@ footer .logo {
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-}
-
-.works-list {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 94px;
-}
-
-.filtr-list {
-    padding-top: 50px;
-    padding-bottom: 94px;
-    display: flex;
-    justify-content: center;
-}
-
-.filtr-list > li {
-    padding-right: 8px;
-}
-
-.examples-list {
-    display: flex;
-    flex-wrap: wrap;
-    padding-bottom: 64px;
-}
-
-.example {
-    width: calc((100% - 60px) / 3);
-    margin-right: 30px;
-    margin-bottom: 30px;
-    border: 1px solid var(--portfolio-border-list);
-}
-
-.example:nth-child(3n) {
-    margin-right: 0;
-}
-
-img {
-    display: block;
 }
